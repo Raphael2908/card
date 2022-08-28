@@ -1,4 +1,5 @@
 import 'package:card/routes.dart';
+import 'package:card/theme.dart';
 import 'package:flutter/material.dart';
 
 // Import the firebase_core plugin
@@ -44,6 +45,7 @@ class _AppState extends State<App> {
         if (snapshot.connectionState == ConnectionState.done) {
           return MaterialApp(
             routes: routes,
+            theme: appTheme,
           );
         }
 
