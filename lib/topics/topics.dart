@@ -1,3 +1,4 @@
+import 'package:card/shared/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 class TopicScreen extends StatelessWidget {
@@ -5,6 +6,8 @@ class TopicScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      bottomNavigationBar: const BottomNavBar(),
+    );
   }
 }
